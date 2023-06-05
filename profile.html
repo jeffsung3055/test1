@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+    .container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>프로필</h1>
+        <img src="IMG_5552.jpeg" alt="프로필 사진" class="img-fluid">
+        <p>이름: 김하은</p>
+        <p>나이: 25세 (99년생)</p>
+        <p>키: 162cm</p>
+        <p>몸무게: 비밀</p>
+        <p>특징: 천사들이 많음</p>
+    </div>
+
+<div class="footer">
+    <button onclick="goBack()">홈으로 돌아가기</button>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
