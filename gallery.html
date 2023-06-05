@@ -1,0 +1,105 @@
+
+Copy code
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .gallery-img {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .footer button {
+            background-color: #4c586f;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>갤러리</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="IMG_7034.jpeg" class="gallery-img" alt="사진 1">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_7029.jpeg" class="gallery-img" alt="사진 2">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_6629.JPG" class="gallery-img" alt="사진 3">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_6628.JPG" class="gallery-img" alt="사진 4">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_6337.JPG" class="gallery-img" alt="사진 5">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_6157.jpeg" class="gallery-img" alt="사진 6">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_5580.jpeg" class="gallery-img" alt="사진 7">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_5579.jpeg" class="gallery-img" alt="사진 8">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_5575.jpeg" class="gallery-img" alt="사진 9">
+            </div>
+            <div class="col-lg-4">
+                <img src="IMG_5552.jpeg" class="gallery-img" alt="사진 10">
+            </div>
+            <div class="col-lg-4">
+                <img src="B23DB2C2-8D01-4890-BB49-46B1EAE0E1D2.jpg" class="gallery-img" alt="사진 10">
+            </div>
+            <div class="col-lg-4">
+                <img src="D9079056-CDCD-4F76-9335-FF75948FCE63.jpg" class="gallery-img" alt="사진 10">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button onclick="goBack()">홈으로 돌아가기</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
